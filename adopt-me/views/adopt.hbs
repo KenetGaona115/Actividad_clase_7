@@ -1,0 +1,36 @@
+<div class="container-adopt">
+    <div class="adopt-text">
+        <p class="text-adopt">
+            You're adopting {{animal.animalname}} <br>
+            please write your user's id so we can <br>
+            register you on our database. <br>
+            <br>
+            Thank you for adopting!
+        </p>
+    </div>
+    <br>
+    <div class="id-user-adopt">
+        <form method="post" action="/owner/{{animal.id}}">
+        <span>
+            ID
+        </span>
+            <input type="text" name="iduser" required /><br />
+            <a href="/">
+            <button class="final-adopt-button" type="submit">
+                Adopt me!
+            </button>
+            </a>
+        </form>
+
+    </div>
+</div>
+
+<!--
+
+<a href="/">
+            <button class="final-adopt-button" type="button" onclick="getId">
+                Adopt me!
+            </button>
+        </a>
+
+    -->
